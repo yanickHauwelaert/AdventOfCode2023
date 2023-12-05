@@ -2,8 +2,8 @@
 using System.Text.RegularExpressions;
 
 
-string[] inputArr = File.ReadAllLines(@"C:\Users\yanick\RiderProjects\AdventOfCode2023\Day1\input.txt");
-//string[] inputArr = {"two1nine", "eightwothree", "abcone2threexyz", "xtwone3four", "4nineeightseven2", "zoneight234", "7pqrstsixteen" };
+//string[] inputArr = File.ReadAllLines(@"C:\Users\yanick\RiderProjects\AdventOfCode2023\Day1\input.txt");
+string[] inputArr = {"two1nine", "eightwothree", "abcone2threexyz", "xtwone3four", "4nineeightseven2", "zoneight234", "7pqrstsixteen", "oneeight"};
 int total = 0;
 string pattern = @"one|two|three|four|five|six|seven|eight|nine|\d";
 
@@ -80,6 +80,7 @@ foreach (var input in inputArr)
     var number = int.Parse(firstNumber+lastNumber);
     Console.WriteLine(number);
     total += number;
+    //Console.WriteLine(total);
 }
 
 Console.WriteLine(total);
